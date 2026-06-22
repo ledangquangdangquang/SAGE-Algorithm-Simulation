@@ -33,8 +33,8 @@ for iter = 1:n_iter
         % E-step: compute complete data estimate for wave l
         X_hat_l = expectation_step(y, theta, l, cfg);
 
-        % M-step: estimate wave l parameters
-        theta_l_new = mle_single_wave(X_hat_l, cfg, search_grid);
+        % M-step: estimate wave l parameters (start from current estimate)
+        theta_l_new = mle_single_wave(X_hat_l, cfg, search_grid, theta(l, :));
 
         % Update
         theta(l, :) = theta_l_new;
