@@ -18,3 +18,5 @@ results/tables/*.csv
 
 # Temporary test files
 test_interp.m
+test_separation.m
+debug_*.m
