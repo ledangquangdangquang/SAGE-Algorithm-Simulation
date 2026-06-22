@@ -1,0 +1,20 @@
+# MATLAB
+*.mat
+*.asv
+slprj/
+simulink/
+
+# AI-generated documentation (AGENTS.md and docs/*.md)
+AGENTS.md
+docs/*.md
+
+# Generated figures
+results/figures/*.png
+results/figures/*.fig
+
+# Generated tables
+results/tables/*.mat
+results/tables/*.csv
+
+# Temporary test files
+test_interp.m
